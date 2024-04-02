@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(15, 23, 42, .3);
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      margin-left: 20px;
+
+      a {
+        color: rgb(44 201 255);
+        font-weight: 900;
+        font-size: 1.875rem;
+        white-space: nowrap;
+        text-decoration: none;
+      }
+    }
+
+    .buttons {
+      margin-right: 20px;
+
+      a:nth-child(-n+2) {
+        margin-right: 10px;
+      }
+
+      ng-icon {
+        font-size: 28px;
+        color: rgb(148 163 184);
+
+        &:hover {
+          color: rgb(85, 85, 97);
+        }
+      }
+    }
+  }
+}
+
+
