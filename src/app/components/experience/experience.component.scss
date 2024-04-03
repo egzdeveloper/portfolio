@@ -1,0 +1,100 @@
+section {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 700px;
+
+  h2 {
+    color: rgb(239 250 255);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-left: -1.8rem;
+  }
+
+  article {
+    width: 100%;
+
+    ul {
+      list-style: none;
+      border-left: 1px solid rgb(51 65 85);
+      position: relative;
+
+      li {
+        margin-bottom: 3rem;
+        margin-left: 1.5rem;
+        display: list-item;
+
+        span.logo {
+          width: 3.6rem;
+          height: 3.6rem;
+          left: -1.8rem;
+          display: flex;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          border: 1px solid rgb(71 85 105);
+          background-color: rgb(2 6 23);
+          box-shadow: 0 0 0 20px rgb(2 6 23);
+
+          img {
+            width: 3rem;
+          }
+
+          ng-icon {
+            color: rgb(44 201 255);
+            font-size: 30px;
+          }
+        }
+
+        h3 {
+          color: rgb(44 201 255);
+          font-weight: 600;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          gap: .5rem;
+          display: flex;
+          align-items: center;
+          margin-bottom: .25rem;
+
+          span.line {
+            color: rgb(255 255 255);
+            font-weight: 400;
+          }
+
+          span.company {
+            color: rgba(255, 178, 114, .9);
+            font-size: .875rem;
+            line-height: 1.25rem;
+
+          }
+        }
+
+        time {
+          color: rgba(182, 234, 255, .9);
+          line-height: 1;
+          font-weight: 400;
+          display: block;
+          margin-bottom: .5rem;
+        }
+
+        p {
+          color: rgb(226 232 240);
+          text-wrap: pretty;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+      li:nth-last-child(1) {
+        padding-bottom: 8px;
+      }
+    }
+  }
+}

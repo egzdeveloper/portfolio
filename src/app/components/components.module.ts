@@ -8,7 +8,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { heroUsers } from '@ng-icons/heroicons/outline';
+import { iconoirLaptopDevMode } from '@ng-icons/iconoir';
 import {
   ionLogoLinkedin,
   ionLogoGithub,
@@ -31,7 +31,7 @@ import { StartComponent } from './start/start.component';
   imports: [
     CommonModule,
     NgIconsModule.withIcons({
-      heroUsers,
+      iconoirLaptopDevMode,
       ionLogoLinkedin,
       ionLogoGithub,
       tablerFileDownload,
