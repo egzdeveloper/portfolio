@@ -14,7 +14,7 @@ import {
   ionLogoGithub,
   ionArrowDown
 } from '@ng-icons/ionicons';
-import { tablerFileDownload } from '@ng-icons/tabler-icons';
+import { tablerFileDownload, tablerMailPlus } from '@ng-icons/tabler-icons';
 import { StartComponent } from './start/start.component';
 
 
@@ -35,7 +35,8 @@ import { StartComponent } from './start/start.component';
       ionLogoLinkedin,
       ionLogoGithub,
       tablerFileDownload,
-      ionArrowDown
+      ionArrowDown,
+      tablerMailPlus
     })
   ],
   exports: [

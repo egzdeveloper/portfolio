@@ -1,0 +1,53 @@
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 700px;
+
+  h2 {
+    color: rgb(239 250 255);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-left: -1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    article {
+      border: 1px solid rgb(15 23 42);
+      padding: 0 1.5rem;
+      border-radius: 1rem;
+
+      h3 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+
+        &.frontend {
+          color: rgb(153 255 255);
+        }
+
+        &.backend {
+          color: rgb(226 232 240);
+        }
+
+        &.learning {
+          color: rgb(255 178 114);
+        }
+
+        &.tools {
+          color: rgb(102, 238, 138);
+        }
+      }
+    }
+  }
+}
