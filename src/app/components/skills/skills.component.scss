@@ -4,7 +4,6 @@ section {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  max-width: 700px;
 
   h2 {
     color: rgb(239 250 255);
@@ -12,6 +11,7 @@ section {
     line-height: 2.25rem;
     font-weight: 700;
     margin-bottom: 40px;
+    margin-left: -1.8rem;
   }
 
   .grid {
@@ -26,7 +26,6 @@ section {
       border-radius: 1rem;
 
       h3 {
-        font-size: 2.5rem;
         line-height: 2.5rem;
         font-weight: 700;
         text-align: center;
@@ -53,7 +52,7 @@ section {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         list-style: none;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         margin-left: -30px;
 
         li {
@@ -78,6 +77,51 @@ section {
             margin-bottom: 10px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    max-width: 700px;
+
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  section {
+    max-width: 75%;
+    padding-left: 10px;
+
+    .grid {
+      grid-template-rows: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    max-width: 90%;
+
+    h2 {
+      margin-left: 10px;
+    }
+
+    .grid {
+      grid-template-rows: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      h3 {
+        font-size: 1.5rem;
       }
     }
   }

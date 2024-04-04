@@ -4,7 +4,6 @@ section {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  max-width: 700px;
   margin-top: 30px;
 
   h2 {
@@ -39,9 +38,8 @@ section {
   }
 
   .buttons {
-    margin-top: 30px;
+
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
@@ -68,7 +66,39 @@ section {
         }
 
       }
-  }
+    }
 
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    .buttons {
+      flex-direction: column-reverse;
+      margin-top: 0;
+
+      .button {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .buttons {
+    flex-direction: row;
+    margin-top: 30px;
   }
 }
