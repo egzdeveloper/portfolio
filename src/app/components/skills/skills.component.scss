@@ -12,6 +12,14 @@ section {
     font-weight: 700;
     margin-bottom: 40px;
     margin-left: -1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    ng-icon {
+      margin-right: 15px;
+    }
   }
 
   .grid {

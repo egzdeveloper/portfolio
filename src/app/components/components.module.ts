@@ -6,16 +6,19 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
+import { StartComponent } from './start/start.component';
 
 import { NgIconsModule } from '@ng-icons/core';
 import { iconoirLaptopDevMode } from '@ng-icons/iconoir';
 import {
   ionLogoLinkedin,
   ionLogoGithub,
-  ionArrowDown
+  ionArrowDown,
+  ionBriefcaseOutline,
+  ionPersonCircleOutline,
+  ionConstructOutline
 } from '@ng-icons/ionicons';
 import { tablerFileDownload, tablerMailPlus } from '@ng-icons/tabler-icons';
-import { StartComponent } from './start/start.component';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { StartComponent } from './start/start.component';
       ionLogoGithub,
       tablerFileDownload,
       ionArrowDown,
-      tablerMailPlus
+      tablerMailPlus,
+      ionBriefcaseOutline,
+      ionPersonCircleOutline,
+      ionConstructOutline
     })
   ],
   exports: [
