@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+// Components
 import { ExperienceComponent } from './experience/experience.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -7,7 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { StartComponent } from './start/start.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
+// Icons
 import { NgIconsModule } from '@ng-icons/core';
 import { iconoirLaptopDevMode } from '@ng-icons/iconoir';
 import {
@@ -18,7 +22,7 @@ import {
   ionPersonCircleOutline,
   ionConstructOutline
 } from '@ng-icons/ionicons';
-import { tablerFileDownload, tablerMailPlus } from '@ng-icons/tabler-icons';
+import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/tabler-icons';
 
 
 @NgModule({
@@ -29,7 +33,8 @@ import { tablerFileDownload, tablerMailPlus } from '@ng-icons/tabler-icons';
     AboutComponent,
     SkillsComponent,
     FooterComponent,
-    StartComponent
+    StartComponent,
+    HobbiesComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +47,8 @@ import { tablerFileDownload, tablerMailPlus } from '@ng-icons/tabler-icons';
       tablerMailPlus,
       ionBriefcaseOutline,
       ionPersonCircleOutline,
-      ionConstructOutline
+      ionConstructOutline,
+      tablerChess
     })
   ],
   exports: [
@@ -52,7 +58,8 @@ import { tablerFileDownload, tablerMailPlus } from '@ng-icons/tabler-icons';
     AboutComponent,
     SkillsComponent,
     FooterComponent,
-    StartComponent
+    StartComponent,
+    HobbiesComponent
   ]
 })
 export class ComponentsModule { }
