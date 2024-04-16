@@ -13,17 +13,26 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 
 // Icons
 import { NgIconsModule } from '@ng-icons/core';
-import { iconoirLaptopDevMode } from '@ng-icons/iconoir';
+import {
+  iconoirLaptopDevMode,
+  iconoirGym,
+  iconoirOpenInBrowser,
+} from '@ng-icons/iconoir';
 import {
   ionLogoLinkedin,
   ionLogoGithub,
   ionArrowDown,
   ionBriefcaseOutline,
   ionPersonCircleOutline,
-  ionConstructOutline
+  ionConstructOutline,
+  ionCodeSlash
 } from '@ng-icons/ionicons';
-import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/tabler-icons';
-
+import {
+  tablerFileDownload,
+  tablerMailPlus,
+  tablerChess,
+  tablerScissors,
+} from '@ng-icons/tabler-icons';
 
 @NgModule({
   declarations: [
@@ -34,7 +43,7 @@ import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/table
     SkillsComponent,
     FooterComponent,
     StartComponent,
-    HobbiesComponent
+    HobbiesComponent,
   ],
   imports: [
     CommonModule,
@@ -48,8 +57,12 @@ import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/table
       ionBriefcaseOutline,
       ionPersonCircleOutline,
       ionConstructOutline,
-      tablerChess
-    })
+      tablerChess,
+      tablerScissors,
+      iconoirGym,
+      iconoirOpenInBrowser,
+      ionCodeSlash
+    }),
   ],
   exports: [
     ExperienceComponent,
@@ -59,7 +72,7 @@ import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/table
     SkillsComponent,
     FooterComponent,
     StartComponent,
-    HobbiesComponent
-  ]
+    HobbiesComponent,
+  ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

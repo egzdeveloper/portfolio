@@ -4,7 +4,6 @@ section {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  max-width: 700px;
   margin-bottom: 80px;
 
   .title {
@@ -12,15 +11,20 @@ section {
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 700;
-    margin-bottom: 40px;
-    margin-left: -1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    ng-icon {
+      margin-right: 15px;
+    }
   }
 
-  .projects {
+  .grid {
     display: grid;
-    grid-template-columns: repeat(4, (minmax(0, 1fr)));
-    gap: 1rem;
-    margin-left: -1.8rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
 
     div {
       background-color: rgb(15 23 42);
@@ -55,6 +59,14 @@ section {
           font-weight: 700;
           font-size: 1.125rem;
           line-height: 1.75rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: .5rem;
+
+          ng-icon {
+            font-size: 1.5rem;
+          }
         }
 
         p {
@@ -63,6 +75,7 @@ section {
           display: -webkit-box;
           -webkit-box-orient: vertical;
           margin-top: 1rem;
+          text-align: justify;
         }
 
         ul {
@@ -110,9 +123,34 @@ section {
             justify-content: center;
             align-items: center;
             text-decoration: inherit;
+
+            ng-icon {
+              font-size: 1.2rem;
+            }
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    max-width: 700px;
+
+    .title {
+      margin-left: -1.8rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    max-width: 85%;
+
+    .grid {
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
 }
