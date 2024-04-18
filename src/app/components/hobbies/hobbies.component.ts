@@ -94,6 +94,7 @@ export class HobbiesComponent {
   play(song: Song) {
     this.audio.src = './../../../assets/sounds/' + song.id + '.mp3';
 
+
     for (let song of this.playlist) {
       song.playing = false;
     }
