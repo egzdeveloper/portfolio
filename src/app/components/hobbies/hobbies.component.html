@@ -3,31 +3,42 @@
   <section class="grid">
     <article class="music">
       <p>Descubre mis canciones favoritas</p>
-      <iframe src="https://open.spotify.com/embed/track/236mI0lz8JdQjlmijARSwY?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/5BnFZLH99sYav2cxJFGO2n?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/5EWPGh7jbTNO2wakv8LjUI?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/0d28khcov6AiegSCpG5TuT?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/3K4HG9evC7dg3N0R9cYqk4?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+      <div class="iframe" *ngFor="let song of playlist" [style]="song.color">
+        <div class="image">
+          <img [src]="song.src" [alt]="song.alt">
+          <div class="text">
+            <a [href]="song.songUrl" target="_blank">{{ song.name }}</a>
+            <a [href]="song.artistUrl"
+              target="_blank">{{ song.artist }}</a>
+          </div>
+        </div>
+        <div class="buttons">
+          <ng-icon name="ionPlayCircle" (click)="play(song)" *ngIf="!song.playing"></ng-icon>
+          <ng-icon name="ionPauseCircle" (click)="stop(song)" *ngIf="song.playing"></ng-icon>
+        </div>
+      </div>
     </article>
     <div class="right">
       <article class="container-books">
         <p>Echa un vistazo a mis libros favoritos</p>
         <div class="books">
           <div>
-            <p><a  target="_blank" href="https://www.google.es/books/edition/Tracers_in_the_Dark/uytfEAAAQBAJ?hl=es&gbpv=0">Tracers in the Dark: The Global Hunt for the Crime Lords of Cryptocurrency</a></p>
+            <p><a target="_blank"
+                href="https://www.google.es/books/edition/Tracers_in_the_Dark/uytfEAAAQBAJ?hl=es&gbpv=0">Tracers in the
+                Dark: The Global Hunt for the Crime Lords of Cryptocurrency</a></p>
             <span>Andy Greenberg, 2022</span>
           </div>
           <div>
-            <p><a target="_blank" href="https://www.google.es/books/edition/Un_Mundo_Inmenso/xu54EAAAQBAJ?hl=es&gbpv=0">Explicaciones de lugares inexplicables</a></p>
+            <p><a target="_blank"
+                href="https://www.google.es/books/edition/Un_Mundo_Inmenso/xu54EAAAQBAJ?hl=es&gbpv=0">Explicaciones de
+                lugares inexplicables</a></p>
             <span>Un mundo inmenso, 2022</span>
           </div>
           <div>
-            <p><a target="_blank" href="https://www.google.es/books/edition/Qu%C3%A9_hace_un_bos%C3%B3n_como_t%C3%BA_en_un_big_b/Tu-fEAAAQBAJ?hl=es&gbpv=0">¿Qué hace un bosón como tú en un Big Bang como este? Orgías cósmicas, polvo de estrellas y
+            <p><a target="_blank"
+                href="https://www.google.es/books/edition/Qu%C3%A9_hace_un_bos%C3%B3n_como_t%C3%BA_en_un_big_b/Tu-fEAAAQBAJ?hl=es&gbpv=0">¿Qué
+                hace un bosón como tú en un Big Bang como este? Orgías cósmicas, polvo de estrellas y
                 otras locuras cuánticas</a>
             </p>
             <span>Javier Santaolalla, 2022</span>

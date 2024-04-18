@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+
 
 // Components
 import { ExperienceComponent } from './experience/experience.component';
@@ -20,7 +22,9 @@ import {
   ionArrowDown,
   ionBriefcaseOutline,
   ionPersonCircleOutline,
-  ionConstructOutline
+  ionConstructOutline,
+  ionPlayCircle,
+  ionPauseCircle
 } from '@ng-icons/ionicons';
 import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/tabler-icons';
 
@@ -38,6 +42,7 @@ import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/table
   ],
   imports: [
     CommonModule,
+    BrowserModule,
     NgIconsModule.withIcons({
       iconoirLaptopDevMode,
       ionLogoLinkedin,
@@ -48,7 +53,9 @@ import { tablerFileDownload, tablerMailPlus, tablerChess } from '@ng-icons/table
       ionBriefcaseOutline,
       ionPersonCircleOutline,
       ionConstructOutline,
-      tablerChess
+      tablerChess,
+      ionPlayCircle,
+      ionPauseCircle
     })
   ],
   exports: [
