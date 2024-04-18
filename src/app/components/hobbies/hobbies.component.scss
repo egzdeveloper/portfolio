@@ -35,7 +35,6 @@ section {
       border: 2px solid rgb(15 23 42);
       padding: 0.5rem 1rem 1rem 1rem;
       border-radius: 1rem;
-      margin-bottom: 10px;
 
       p {
         color: rgb(239 250 255);
@@ -47,10 +46,15 @@ section {
         height: 80px;
         border: 0;
         margin-bottom: 15px;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
       }
     }
 
     .games {
+
       .tiles {
         display: flex;
         flex-direction: row;
@@ -78,6 +82,35 @@ section {
         }
       }
     }
+
+    .books {
+      div {
+
+        p {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          width: 100%;
+
+          a {
+            text-decoration: none;
+            color: rgb(239 250 255);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        span {
+          display: block;
+          font-size: 0.75rem;
+          color: rgb(156 163 175);
+          margin-top: -15px;
+        }
+      }
+    }
   }
 
 }
@@ -88,6 +121,10 @@ section {
 
     .grid {
       gap: 1.5rem;
+
+      .container-books {
+        margin-bottom: 16px;
+      }
     }
   }
 }
@@ -100,9 +137,14 @@ section {
     .grid {
       grid-template-rows: repeat(1, minmax(0, 1fr));
       grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1.5rem;
 
       h3 {
         font-size: 2.5rem;
+      }
+
+      .container-books {
+        margin-bottom: 1.5rem;
       }
     }
   }
@@ -119,6 +161,11 @@ section {
     .grid {
       grid-template-rows: repeat(1, minmax(0, 1fr));
       grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1.5rem;
+
+      .container-books {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }
