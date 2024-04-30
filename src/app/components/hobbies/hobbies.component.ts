@@ -37,16 +37,16 @@ export class HobbiesComponent {
         playing: false
       },
       {
-        id: 'gone-away',
-        src: './../../../assets/images/gone-away.webp',
-        name: 'Gone Away',
-        artist: 'The Offspring',
+        id: 'stuck-on-you',
+        src: './../../../assets/images/stuck-on-you.webp',
+        name: 'Stuck on You',
+        artist: 'Failure',
         songUrl:
-          'https://open.spotify.com/track/5BnFZLH99sYav2cxJFGO2n?si=9f0c10bf0ad84bd8',
+          'https://open.spotify.com/track/6vvy5pRjQOXeigpYE2TDbZ?si=6785fde16d7a4aff',
         artistUrl:
-          'https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ?si=lKWZAQeSTJyWz2KGnPTfvQ',
-        color: 'background-color: #506828',
-        alt: 'Ixnay On The Hombre cover',
+          'https://open.spotify.com/artist/3grvcGPaLhfrD5CYsecr4j?si=i8Iv7-VMTFe44Jh9vyF5pQ',
+        color: 'background-color: #483088',
+        alt: 'Fantastic Planet cover',
         playing: false
       },
       {
@@ -76,16 +76,16 @@ export class HobbiesComponent {
         playing: false
       },
       {
-        id: 'one-step-closer',
-        src: './../../../assets/images/one-step-closer.webp',
-        name: 'One Step Closer',
-        artist: 'Linkin Park',
+        id: 'kryptonite',
+        src: './../../../assets/images/kryptonite.webp',
+        name: 'Kryptonite',
+        artist: '3 Doors Down',
         songUrl:
-          'https://open.spotify.com/track/3K4HG9evC7dg3N0R9cYqk4?si=ca55d0aa852649d2',
+          'https://open.spotify.com/track/6ZOBP3NvffbU4SZcrnt1k6?si=2c7425d715d0492f',
         artistUrl:
-          'https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz?si=Bf5IKq9hQpa8aHkw-pCbMw',
-        color: 'background-color: #777772',
-        alt: "Hybrid Theory cover",
+          'https://open.spotify.com/artist/2RTUTCvo6onsAnheUk3aL9?si=aw5X3whURGOT2zH3rC02iw',
+        color: 'background-color: #506828',
+        alt: "The Better Life cover",
         playing: false
       }
     ];
