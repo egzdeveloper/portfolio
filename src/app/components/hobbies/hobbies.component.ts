@@ -37,16 +37,16 @@ export class HobbiesComponent {
         playing: false
       },
       {
-        id: 'stuck-on-you',
-        src: './../../../assets/images/stuck-on-you.webp',
-        name: 'Stuck on You',
-        artist: 'Failure',
+        id: 'the-pot',
+        src: './../../../assets/images/the-pot.webp',
+        name: 'The Pot',
+        artist: 'TOOL',
         songUrl:
           'https://open.spotify.com/track/6vvy5pRjQOXeigpYE2TDbZ?si=6785fde16d7a4aff',
         artistUrl:
           'https://open.spotify.com/artist/3grvcGPaLhfrD5CYsecr4j?si=i8Iv7-VMTFe44Jh9vyF5pQ',
-        color: 'background-color: #483088',
-        alt: 'Fantastic Planet cover',
+        color: 'background-color: #262643',
+        alt: '10,000 Days cover',
         playing: false
       },
       {
